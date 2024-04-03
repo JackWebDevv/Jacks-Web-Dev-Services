@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>Jacks Web Dev Services</title>
 
     <style>
@@ -26,6 +27,7 @@
 
         .titt{
             text-shadow: 2px 2px #fff;
+            color: #F08700;
         }
 
         .stage {
@@ -52,6 +54,11 @@
     100% { transform: scale(1,1) translateY(0); }
 }
 
+p.outset {outline-style: outset;}
+
+p {outline-color:#F08700;}
+
+
     </style>
 </head>
 <body>
@@ -74,47 +81,68 @@
 
       <div class="container-fluid pt-5 rounded" style="background-color: #F8F7F3;">
         <div class="container">
-            <h1 class="text-center pt-2 text-dark titt">About</h1>
-            <p class="pb-4 text-dark">I'm Jack, a seasoned web developer with over a decade of experience. Originating from Birmingham, UK, I embarked on my programming journey at the age of 14, specializing in Python during my GCSEs. Since then, I've dedicated myself to continuous learning, investing heavily in expanding my skill set across various development technologies.<br><br>
+            <div class="w3-container w3-center w3-animate-left">
+            <h1 class="text-center pt-2 text-dark titt" style="text-decoration: underline;">About</h1>
+            </div>
+            <p class="pb-4 text-dark w3-animate-right">I'm Jack, a seasoned web developer with over a decade of experience. Originating from Birmingham, UK, I embarked on my programming journey at the age of 14, specializing in Python during my GCSEs. Since then, I've dedicated myself to continuous learning, investing heavily in expanding my skill set across various development technologies.<br><br>
 
                 Now, I'm poised to transition my passion for programming into a full-fledged career. This website serves as a portfolio of my work, showcasing the caliber of services I offer as a freelance web developer. Explore my projects and see how I can elevate your online presence. Let's collaborate to achieve your digital objectives.</p>
       </div>
     </div>
 
       <div class="container mt-5 rounded">
-        <h1 class="text-center pt-2 text-dark titt">My Services</h1>
+        <h1 class="text-center pt-2 text-dark titt pb-4" style="text-decoration: underline;">My Services</h1>
 
 
-        <div class="container rounded">
-        <div class="text-center mt-4">
+        <div class="container rounded outset pb-2 mb-2" style="width: 75%; border: solid; border-color: #F08700; border-style: inset;">
+        <div class="text-center mt-4 mb-3">
             <svg xmlns="http://www.w3.org/2000/svg"  height="100" viewBox="0 0 24 24" width="100"><path d="M0 0h24v24H0z"  fill="none"/><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"/></svg>
         </div>
         <p class="pb-4 text-dark"><span class="titt" style="font-size: 20px;">Full Stack Web Development: </span>First and foremost I am a full stack web developer. I can build your business or organisation a new website from scratch and have it ready for you to use in a timely manner! I provide basic training around the upkeep and basic knowledge of website maintanence to ensure your digital presence is kept strong in a growing information age!<br><br>
         
-        </p></div>
+        </p>
+        
+        <div class="text-center">
+        <div class="btn text-light rounded-pill" style="background-color: #F08700; font-weight: bold;"><a href="#">Enquire about your website</a></div>
+        </div>
 
-        <div class="container rounded">
-        <div class="text-center mt-4">
+        </div>
+
+        <div class="container rounded outset pb-2 mb-2" style="width: 75%; border: solid; border-color: #F08700; border-style: inset;">
+        <div class="text-center mt-4 mb-3">
             <svg xmlns="http://www.w3.org/2000/svg" height="100" viewBox="0 0 24 24" width="100"><path d="M0 0h24v24H0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
         </div>
 
         <p class="pb-4 text-dark"><span class="titt" style="font-size: 20px;">Search Engine Optimisation: </span>Introduing a end to end plan for your search engine optimisation to really increase your sites organic traffic. I provide extensive SEO optimisation to all sites I work on as I truly believe footfall on your new site is a fantastic metric of success when measuring my service.<br><br>
-        </p></div>
+        </p>
+    
+        <div class="text-center">
+            <div class="btn text-light rounded-pill" style="background-color: #F08700; font-weight: bold;"><a href="#">Enquire about your website</a></div>
+            </div>
+        </div>
 
-        <div class="container rounded">
-        <div class="text-center mt-4">
+        <div class="container rounded outset pb-2 mb-2" style="width: 75%; border: solid; border-color: #F08700; border-style: inset;">
+        <div class="text-center mt-4 mb-3">
             <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="100" viewBox="0 0 24 24" width="100"><g><rect fill="none" height="24" width="24"/><path d="M14,12l-2,2l-2-2l2-2L14,12z M12,6l2.12,2.12l2.5-2.5L12,1L7.38,5.62l2.5,2.5L12,6z M6,12l2.12-2.12l-2.5-2.5L1,12 l4.62,4.62l2.5-2.5L6,12z M18,12l-2.12,2.12l2.5,2.5L23,12l-4.62-4.62l-2.5,2.5L18,12z M12,18l-2.12-2.12l-2.5,2.5L12,23l4.62-4.62 l-2.5-2.5L12,18z"/></g></svg>
         </div>
         <p class="pb-4 text-dark"><span class="titt" style="font-size: 20px;">Third Party Integrations (APIs): </span>If you require a third party piece of software attached to your website I can implement these into your websites and allow them to become seamless within your brand and give your customers the perfect experience!<br><br>
-        </p></div>
+        </p>
+        <div class="text-center">
+            <div class="btn text-light rounded-pill" style="background-color: #F08700; font-weight: bold;"><a href="#">Enquire about your website</a></div>
+            </div>
+        </div>
 
 
-        <div class="container rounded">
-        <div class="text-center mt-4">
+        <div class="container rounded outset pb-2 mb-2" style="width: 75%; border: solid; border-color: #F08700; border-style: inset;">
+        <div class="text-center mt-4 mb-3">
             <svg xmlns="http://www.w3.org/2000/svg" height="100" viewBox="0 0 24 24" width="100"><path d="M0 0h24v24H0z" fill="none"/><path d="M17.21 9l-4.38-6.56c-.19-.28-.51-.42-.83-.42-.32 0-.64.14-.83.43L6.79 9H2c-.55 0-1 .45-1 1 0 .09.01.18.04.27l2.54 9.27c.23.84 1 1.46 1.92 1.46h13c.92 0 1.69-.62 1.93-1.46l2.54-9.27L23 10c0-.55-.45-1-1-1h-4.79zM9 9l3-4.4L15 9H9zm3 8c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/></svg>
         </div>
         <p class="pb-4 text-dark"><span class="titt" style="font-size: 20px;">E-Commerce Website Development: </span>If you are wanting to sell products online then I am the man for you to set this up, I can build you a fully functioning store and if needed help you with the fulfilment side of a new e-commerce business as I do have experience in 3pl work enviroments doing this very job!<br><br>
-        </p></div>
+        </p>
+        <div class="text-center">
+            <div class="btn text-light rounded-pill" style="background-color: #F08700; font-weight: bold;"><a href="#">Enquire about your website</a></div>
+            </div>
+        </div>
 
      </div>
    
