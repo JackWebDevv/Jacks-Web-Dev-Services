@@ -30,6 +30,21 @@
 
         }
 
+        .map-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* Aspect ratio: 16:9 */
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
         .titt{
             text-shadow: 2px 2px #fff;
             color: #1C6E8C;
@@ -100,8 +115,11 @@ p {outline-color:#EFCA08;}
         <div class="container">
             <div class="w3-container w3-center w3-animate-left">
             <h1 class="text-center pt-2 text-dark titt" style="text-decoration: underline;">About</h1>
+
             <div class="container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d38876.51207524653!2d-1.91821107705678!3d52.483082641841854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1712156275974!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="pt-4 pb-4"></iframe></div>
+                <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d38875.957761738515!2d-1.8864537223204518!3d52.48370988356211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1712164813896!5m2!1sen!2suk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div></div>
+            
             </div>
             <p class="pb-4 text-dark w3-animate-right titer">
                 Welcome to my portfolio! I'm Jack, a seasoned web developer based in Birmingham, UK. With over a decade of experience, I began my programming journey at the age of 14, specializing in Python during my GCSEs. Since then, I've been dedicated to continuous learning, expanding my expertise across various development technologies.<br><br>
