@@ -23,7 +23,7 @@
         .navbar-brand{
             color: #000 !important;
             font-weight: bold;
-            font-size: 40px;
+            font-size: 25px;
             text-shadow: 2px 2px #fff;
             font-family: "Comfortaa", sans-serif;
             font-weight: 700;
@@ -133,24 +133,37 @@ p {outline-color:#F08700;}
         </div>
         
         <div class="text-center">
-            <div class="btn text-light rounded-pill" style="background-color: #F08700; font-weight: bold;"><a class="tittier" href="#" style="text-decoration: none;" onclick="toggleHiddenContent()">Read More</a></div><br><br>
+            <div class="btn text-light rounded-pill" style="background-color: #F08700; font-weight: bold;"><a class="tittier" style="text-decoration: none;" onclick="toggleHiddenContent(this)">Read More</a></div>
+
+            
+            <br><br>
             <div class="btn text-light rounded-pill" style="background-color: #F08700; font-weight: bold;"><a class="tittier" href="#" style="text-decoration: none;">Enquire about your website</a></div>
         </div>
 
         </div>
 
         <script>
-            function toggleHiddenContent() {
-                var hiddenContent = document.querySelector('.hiddenfullstack');
-                hiddenContent.style.display = 'block';
-            }
-        </script>
+    var isContentVisible = false;
 
+    function toggleHiddenContent(button) {
+        var hiddenContent = document.querySelector('.hiddenfullstack');
+        if (!isContentVisible) {
+            hiddenContent.style.display = 'block';
+            isContentVisible = true;
+            button.innerText = 'Hide More';
+        } else {
+            hiddenContent.style.display = 'none';
+            isContentVisible = false;
+            button.innerText = 'Read More';
+        }
 
-
-
-
-
+        // Scroll back to the original position
+        window.scrollTo({
+            top: window.scrollY,
+            behavior: 'smooth'
+        });
+    }
+</script>
 
 
 
