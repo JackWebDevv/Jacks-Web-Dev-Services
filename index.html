@@ -3,393 +3,333 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link href="https://fonts.googleapis.com/css2?family=Workbench&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
-    <title>Jacks Web Dev Services</title>
+    <title>Jack's Web Dev Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <style>
-        body{
-            background-color: #093824;
-            font-size: large;
-            font-weight: bold;
+        .navhero {
+            background-color: #CCDCEB;
         }
 
-        .navbar-brand{
-            color: #fff !important;
-            font-weight: bold;
-            font-size: 25px;
-            text-shadow: 2px 2px #000;
-            font-family: "Comfortaa", sans-serif;
-            font-weight: 700;
-
-        }
-
-        .map-container {
-    position: relative;
-    width: 100%;
-    padding-top: 56.25%; /* Aspect ratio: 16:9 */
-}
-
-.map-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-
-        .titt{
-            color: #1C6E8C;
-            font-family: "Comfortaa", sans-serif;
-
-        }
-
-        .tittt{
-            color: #1C6E8C;
-            font-family: "Comfortaa", sans-serif;
-
-        }
-
-        .titer{
-            font-family: "Comfortaa", sans-serif;
-            text-decoration: none;
-
-        }
-
-        .tittier{
-            font-family: "Comfortaa", sans-serif;
-        }
-
-        .stage {
-        
-        width: 100%;
+        .card-container {
+        scroll-behavior: smooth;
     }
-    .box {
-        
-        animation-duration: 2s;
-        animation-iteration-count: infinite;
-        margin: 0 auto 0 auto;
-        transform-origin: bottom;
-        
+
+    .card-container::-webkit-scrollbar {
+        display: none; /* Hide the scrollbar */
     }
-    .bounce-7 {
-        animation-name: bounce-7;
-        animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+
+    .card-body{
+        background-color: #BDD2EA;
+        border: none;
     }
-    @keyframes bounce-7 {
-    0%   { transform: scale(1,1) translateY(0); }
-    10%  { transform: scale(1.05,.95) translateY(0); }
-    20%  { transform: scale(1,1) translateY(-20px); }
-    30%  { transform: scale(1,1) translateY(0); }
-    100% { transform: scale(1,1) translateY(0); }
-}
 
-p.outset {outline-style: outset;}
-
-p {outline-color:#EFCA08;}
-
+    .card{
+        border: none;
+    }
 
     </style>
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #093824;">
-        <!-- Container wrapper -->
-        <div class="container-fluid text-center justify-content-center">
-         
-      
-            <div class="stage">
-
-      
-           <div class="box bounce-7" style="width: 95%;">
-           <a class="navbar-brand text-center justify-content-center" href="#">Jack's Web Dev Services</a>
-        </div>
-         </div>
-        </div>        <!-- Container wrapper -->
-      </nav>
-      <br>
-
-      <div class="container-fluid pt-5 rounded" style="background-color: #093824;">
-        <div class="container">
-            <div class="w3-container w3-center w3-animate-left">
-            <h1 class="text-center pt-2 text-light tittt" style="text-decoration: underline;">About</h1>
-
-            <div class="container">
-                <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d38875.957761738515!2d-1.8864537223204518!3d52.48370988356211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1712164813896!5m2!1sen!2suk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div></div><br>
-            
+    <div class="container-fluid navhero">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Jack's Web Dev Services</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Work</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                  </li>
+                </ul>
+                <span class="navbar-text">
+                  Web Design, Development + Marketing all in one!
+                </span>
+              </div>
             </div>
-            <p class="pb-4 text-light w3-animate-right titer">
-                Welcome to my portfolio! I'm Jack, a seasoned web developer based in Birmingham, UK. With over a decade of experience, I began my programming journey at the age of 14, specializing in Python during my GCSEs. Since then, I've been dedicated to continuous learning, expanding my expertise across various development technologies.<br><br>
-                
-                My journey has been enriched by diverse experiences. I've worked in a busy IT service desk for a major Automotive company, where I honed my troubleshooting skills and learned to thrive in high-pressure situations. This experience also instilled in me a deep understanding of key performance indicators (KPIs) and service level agreements (SLAs), which are integral to my freelance services.<br><br>
-                
-                Additionally, I've worked for a reputable publication company, where I sold digital advertising to businesses. This experience has equipped me with valuable skills in understanding client needs and implementing strategies to enhance online exposure and drive sales growth.<br><br>
-                
-                Through my portfolio, I aim to showcase not only my technical abilities but also my commitment to delivering tangible results for my clients. Let's collaborate to elevate your online presence and achieve your digital objectives.<br><br>
-            
-                </p>
-      </div>
+          </nav>
+
+
+          <div class="container mt-5 p-3">
+            <h1>Freelance Web Developer</h1>
+            <p>I'm Jack, a <strong>Freelance Web Developer</strong> and designer with over 12 years of experience in computer science and 5+ years of marketing experience!</p>
+
+            <div class="btn" style="background-color: #F3D17C;"><a href="#"></a>Enquire Now! </div>
+          </div>
     </div>
 
-      <div class="container-fluid rounded" style="background-color: #ffd945;">
-        <h1 class="text-center pt-2 titt pb-4" style="text-decoration: underline; color: #093824 !important;">My Services</h1>
 
+    <div class="container">
+        <h1>About Me</h1>
+        <p>I am a 26-year-old from Birmingham, UK, with over 12 years of programming experience. My journey began during my secondary school Computer Science GCSEs, where I first started learning Python. I quickly became hooked and explored various areas of programming until I discovered web development, a passion I’ve been dedicated to ever since!</p>
+    
+        <p>Previously, I worked as a Digital Media Manager for a publication called *What’s On*, where I was responsible for digital advertising sales and creating custom, bespoke strategies for clients. This role provided me with invaluable industry knowledge about the digital advertising landscape, while also enhancing my ability to support businesses with their advertising needs.</p>
+    
+        <p>I’ve also gained experience working on a busy IT service desk, supporting up to 7,000 customers with a wide variety of issues. This role helped me develop strong problem-solving skills and the ability to quickly diagnose and resolve technical issues.</p>
+    
+        <p>Today, I’m looking to combine my expertise in digital media and IT to provide a top-tier service to my clients. If you'd like to learn more or discuss how I can help your business, please get in touch!</p>
+    </div>
+    
+    
+    <div class="container-fluid navhero">
+        <div class="container p-3">
+            <h1>My Work</h1>
 
+            <p><strong>On a PC or Laptop? </strong>Hold Shift + Scroll to cycle through my projects!</p>
+            <p><strong>On a Mobile Device? </strong> Just side scroll to view my projects!</p>
+            <div class="card-container d-flex flex-nowrap overflow-auto">
+                <div class="card mx-2" style="min-width: 300px;">
+                    <img src="images/birmingham build example.png" class="card-img-top" alt="Work 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Birmingham Build</h5>
+                        <p class="card-text">This is a showcase example for a business I made up, it is to show off the design used to entice visitors onto the site.</p>
 
-
-
-
-
-
-
-        <div class="container  outset pb-2 mb-2" style="width: 75%; border: solid; border-color: #2274A5; border-radius: 25px;">
-        <div class="text-center mt-4 mb-3">
-            <svg xmlns="http://www.w3.org/2000/svg"  height="100" viewBox="0 0 24 24" width="100"><path d="M0 0h24v24H0z"  fill="none"/><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"/></svg>
+                        <div class="btn" style="background-color: #F3D17C;">Press here to read more.</div>
+                    </div>
+                </div>
+                <div class="card mx-2" style="min-width: 300px;">
+                    <img src="images/Nats Nails Exampl.png" class="card-img-top" alt="Work 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Nat's Nails</h5>
+                        <p class="card-text">Description for Work 2.</p>
+                    </div>
+                </div>
+                <div class="card mx-2" style="min-width: 300px;">
+                    <img src="images/addis.PNG" class="card-img-top" alt="Work 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Addis Removals</h5>
+                        <p class="card-text">Description for Work 3.</p>
+                    </div>
+                </div>
+                <div class="card mx-2" style="min-width: 300px;">
+                    <img src="images/Capture.PNG" class="card-img-top" alt="Work 4">
+                    <div class="card-body">
+                        <h5 class="card-title">JackieBuoy</h5>
+                        <p class="card-text">Description for Work 4.</p>
+                    </div>
+                </div>
+                <div class="card mx-2" style="min-width: 300px;">
+                    <img src="images/Drivingschool3.PNG" class="card-img-top" alt="Work 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Driving School</h5>
+                        <p class="card-text">Description for Work 5.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
 
 
-        <p class="pb-4 text-dark titer"><span class="titt" style="font-size: 20px;">Full Stack Web Development: </span>First and foremost I am a full stack web developer. I can build your business or organisation a new website from scratch and have it ready for you to use in a timely manner! I provide basic training around the upkeep and basic knowledge of website maintanence to ensure your digital presence is kept strong in a growing information age!<br><br></p>
+        <div class="container mt-5 P-3">
+            <h1 class="">Services</h1>
+            <table class="table table-bordered table-hover mt-4">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Service Name</th>
+                        <th scope="col">Estimated Price</th>
+                        <th scope="col">Estimated Timeframe</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Enquire</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Static Web Development <br>
+                            <span class="badge small-btn" style="background-color: #BDD2EA;"><a href="#" class="text-black text-decoration-none">Learn More</a></span>
+
+                        </td>
+                        <td>£150 - £400</td>
+                        <td>6 - 9 Days</td>
+                        <td>Custom static websites tailored to your business needs.</td>
+                        <td><a href="#enquire" class="btn" style="background-color: #F3D17C;">Enquire</a></td>
+                    </tr>
+                    <tr>
+                        <td>Full-Stack Development <br>
+                            <span class="badge small-btn" style="background-color: #BDD2EA;"><a href="#" class="text-black text-decoration-none">Learn More</a></span></td>
+                        <td>£300 - £1200</td>
+                        <td>2 - 4 Weeks</td>
+                        <td>Full-stack development for more complex, dynamic websites.</td>
+                        <td><a href="#enquire" class="btn" style="background-color: #F3D17C;">Enquire</a></td>
+                    </tr>
+                    <tr>
+                        <td>E-Commerce Solutions <br>
+                            <span class="badge small-btn" style="background-color: #BDD2EA;"><a href="#" class="text-black text-decoration-none">Learn More</a></span></td>
+                        <td>£500 - £1500</td>
+                        <td>3 - 6 Weeks</td>
+                        <td>Setup and development of custom e-commerce platforms.</td>
+                        <td><a href="#enquire" class="btn" style="background-color: #F3D17C;">Enquire</a></td>
+                    </tr>
+                    <tr>
+                        <td>PWA Development <br>
+                            <span class="badge small-btn" style="background-color: #BDD2EA;"><a href="#" class="text-black text-decoration-none">Learn More</a></span></td>
+                        <td>£300 - £900</td>
+                        <td>2 - 5 Weeks</td>
+                        <td>Progressive web apps for modern and responsive web experiences.</td>
+                        <td><a href="#enquire" class="btn" style="background-color: #F3D17C;">Enquire</a></td>
+                    </tr>
+                    <tr>
+                        <td>Web Hosting <br>
+                            <span class="badge small-btn" style="background-color: #BDD2EA;"><a href="#" class="text-black text-decoration-none">Learn More</a></span></td>
+                        <td>£50 - £200</td>
+                        <td>1 - 3 Days</td>
+                        <td>Affordable hosting solutions for your website.</td>
+                        <td><a href="#enquire" class="btn" style="background-color: #F3D17C;">Enquire</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="container mt-5">
+                <h2 class="text-center">Design Services</h2>
+                <table class="table table-bordered table-hover mt-4">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Service Name</th>
+                            <th scope="col">Estimated Price</th>
+                            <th scope="col">Estimated Timeframe</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Enquire</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Brand Design <br>
+                                <span class="badge small-btn" style="background-color: #BDD2EA;"><a href="#" class="text-black text-decoration-none">Learn More</a></span></td>
+                            <td>£100 - £500</td>
+                            <td>1 - 2 Weeks</td>
+                            <td>Professional brand identity design to suit your business.</td>
+                            <td><a href="#enquire" class="btn" style="background-color: #F3D17C;">Enquire</a></td>
+                        </tr>
+                        <tr>
+                            <td>Brochure / Menu Design <br>
+                                <span class="badge small-btn" style="background-color: #BDD2EA;"><a href="#" class="text-black text-decoration-none">Learn More</a></span></td>
+                            <td>£80 - £300</td>
+                            <td>1 - 2 Weeks</td>
+                            <td>High-quality brochure or menu design tailored to your requirements.</td>
+                            <td><a href="#enquire" class="btn" style="background-color: #F3D17C;">Enquire</a></td>
+                        </tr>
+                        <tr>
+                            <td>Content Creation <br>
+                                <span class="badge small-btn" style="background-color: #BDD2EA;"><a href="#" class="text-black text-decoration-none">Learn More</a></span></td>
+                            <td>£100 - £600</td>
+                            <td>1 - 3 Weeks</td>
+                            <td>Unique content creation for websites, blogs, and social media.</td>
+                            <td><a href="#enquire" class="btn" style="background-color: #F3D17C;">Enquire</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            
+            <div class="container mt-5">
+                <h2 class="text-center">Marketing Services</h2>
+                <table class="table table-bordered table-hover mt-4">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Service Name</th>
+                            <th scope="col">Estimated Price</th>
+                            <th scope="col">Estimated Timeframe</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Enquire</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>SEO Optimisation<br>
+                                <span class="badge small-btn" style="background-color: #BDD2EA;"><a href="#" class="text-black text-decoration-none">Learn More</a></span></td>
+                            <td>£150 - £600</td>
+                            <td>1 - 3 Weeks</td>
+                            <td>Boost your website's search engine rankings.</td>
+                            <td><a href="#enquire" class="btn" style="background-color: #F3D17C;">Enquire</a></td>
+                        </tr>
+                        <tr>
+                            <td>Digital Marketing Strategy <br>
+                                <span class="badge small-btn" style="background-color: #BDD2EA;"><a href="#" class="text-black text-decoration-none">Learn More</a></span></td>
+                            <td>£200 - £1000</td>
+                            <td>1 - 4 Weeks</td>
+                            <td>Customised strategies to grow your online presence.</td>
+                            <td><a href="#enquire" class="btn" style="background-color: #F3D17C;">Enquire</a></td>
+                        </tr>
+                        <tr>
+                            <td>Email Marketing <br>
+                                <span class="badge small-btn" style="background-color: #BDD2EA;"><a href="#" class="text-black text-decoration-none">Learn More</a></span></td>
+                            <td>£100 - £500</td>
+                            <td>1 - 2 Weeks</td>
+                            <td>Targeted email campaigns to engage your audience.</td>
+                            <td><a href="#enquire" class="btn" style="background-color: #F3D17C;">Enquire</a></td>
+                        </tr>
+                        <tr>
+                            <td>PPC Services <br>
+                                <span class="badge small-btn" style="background-color: #BDD2EA;"><a href="#" class="text-black text-decoration-none">Learn More</a></span></td>
+                            <td>£200 - £800</td>
+                            <td>1 - 2 Weeks</td>
+                            <td>Pay-per-click advertising services for maximum ROI.</td>
+                            <td><a href="#enquire" class="btn" style="background-color: #F3D17C;">Enquire</a></td>
+                        </tr>
+                        <tr>
+                            <td>Social Media Marketing <br>
+                                <span class="badge small-btn" style="background-color: #BDD2EA;"><a href="#" class="text-black text-decoration-none">Learn More</a></span></td>
+                            <td>£150 - £600</td>
+                            <td>1 - 2 Weeks</td>
+                            <td>Engage your audience across social media platforms.</td>
+                            <td><a href="#enquire" class="btn" style="background-color: #F3D17C;">Enquire</a></td>
+                        </tr>
+                        <tr>
+                            <td>Conversion Rate Optimisation <br>
+                                <span class="badge small-btn" style="background-color: #BDD2EA;"><a href="#" class="text-black text-decoration-none">Learn More</a></span></td>
+                            <td>£150 - £700</td>
+                            <td>1 - 2 Weeks</td>
+                            <td>Optimise your website for better conversions.</td>
+                            <td><a href="#enquire" class="btn" style="background-color: #F3D17C;">Enquire</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+
+            <div class="container navhero p-3">
+                <h3 class="text-center">Key Components of My Process</h3>
+                <ul>
+                    <li><strong>Mobile-First Development</strong> – I prioritise mobile-first development, ensuring all websites are optimised for mobile devices from the ground up using Bootstrap. With over 80% of internet traffic coming from mobile devices today, it is essential that your website delivers an excellent user experience across all screen sizes. By focusing on mobile-first, I ensure that your site will work seamlessly on any device.</li>
+            
+                    <li><strong>PWA Development</strong> – A standout feature of my services is the development of Progressive Web Apps (PWAs). PWAs combine the best of websites and mobile apps, offering faster loading times, offline access, and app-like functionality without requiring a download. I offer PWA development at a highly competitive price because I believe PWAs are the future of business websites, providing a flexible, cost-effective solution that every business can benefit from.</li>
+            
+                    <li><strong>Performance</strong> – Website performance is a critical factor for both user experience and search engine rankings. I build websites that load quickly and efficiently, ensuring that your users don't face slow page speeds, which can lead to higher bounce rates. From optimising images to reducing unnecessary code, every aspect of your website will be designed for peak performance.</li>
+            
+                    <li><strong>SEO Optimisation</strong> – Search engine optimisation (SEO) is at the core of everything I build. From the initial development stages, I integrate SEO best practices to ensure your website is search engine friendly, helping you to rank higher in search results and drive organic traffic. This includes proper metadata, clean URLs, and structured content.</li>
+            
+                    <li><strong>Custom-Built Solutions</strong> – I don’t use off-the-shelf templates. Every website I create is custom-built to meet the unique needs of your business. Whether you need specific functionality or a unique design, I’ll work with you to build a website that aligns perfectly with your brand and goals. This bespoke approach ensures a site that stands out and functions exactly as you need it to.</li>
+                </ul>
+            </div>
+            
+        </div>
         
 
 
-        <div class="hiddenfullstack titer" style="display: none;">
-            <p>Here I will talk about the different types of website and what they are used for as well as how this type of website could benefit your online brand!
-                <br>
-                <hr>
-                <br>
-
-                <span class="titt" style="font-size: 20px;">1. Static Website <br></span>
-                Need a simple yet effective online presence? Look no further than a static website. Perfect for showcasing basic information about your business or organization, these sites are quick to set up, provided the content is readily available.<br><br></p>
-
-            <p style="font-weight: 500; font-style: italic;">
-                A static website typically includes essential details such as your brand and business information. Prices for a static website range from £200 to £500, depending on your specific needs, and all sites come with standard SEO features.<br><br>
-
-                Depending on content readiness, I can usually have your new site live within 7 days, though this may vary depending on my schedule. Let's discuss your requirements and get your online presence up and running swiftly.
-            </p>
-
-            <br>
-            <hr>
-            <br>
-
-                <span class="titt" style="font-size: 20px;">2. Dynamic Website <br></span>
-                <p>Looking for a website that offers more than just static content? A dynamic website is the solution. With dynamic functionality, these sites can interact with users, handle data input, and offer personalized experiences.</p>
-                
-                <p style="font-weight: 500; font-style: italic;">
-                    A dynamic website might include features like user authentication, e-commerce capabilities, or content management systems (CMS) for easy updates. Prices for dynamic websites vary based on complexity, starting from £350 and upwards.<br><br>
-
-                Every dynamic website I create includes essential SEO features to maximize your online visibility. Depending on project scope and content readiness, I aim to have your dynamic site live within a reasonable timeframe, typically within 2-4 weeks, subject to scheduling constraints. Let's collaborate to bring your dynamic web vision to life.
-                </p>
-
-
-            <br>
-            <hr>
-            <br>
-
-            <span class="titt" style="font-size: 20px;">3. E-Commerce Website <br></span>
-        <p>Ready to take your business online and start selling products or services? An e-commerce website is the perfect platform. With robust features for online transactions and inventory management, you can reach customers worldwide.</p>
-
-        <p style="font-weight: 500; font-style: italic;">
-            An e-commerce website includes essential elements such as product listings, shopping cart functionality, secure payment gateways, and order management systems. Prices for e-commerce websites vary based on features and customization, typically starting from £1000 and upwards.<br><br>
-
-            Every e-commerce website I develop is optimized for search engines to ensure maximum visibility and reach. Depending on project complexity and content readiness, I aim to have your e-commerce site operational within 4-6 weeks, though this may vary based on workload. Let's work together to build your online store and expand your business reach.
-        </p>
 
 
 
-        <br>
-        <hr>
-        <br>
-
-            <span class="titt" style="font-size: 20px;">4. Progressive Web App (PWA) <br></span>
-        <p>Looking for a modern and engaging way to reach your audience? A Progressive Web App (PWA) offers the best of both worlds: the reach of the web and the functionality of a native app.
-            PWAs deliver a seamless user experience, with features like offline access, push notifications, and fast loading times. They work across various devices and platforms, providing users with a consistent experience.</p>
-
-            <p style="font-weight: 500; font-style: italic;">
-                A PWA typically includes features such as offline caching, responsive design, and app-like interactions. Prices for PWAs vary based on complexity, starting from £1500 and upwards.<br><br>
-
-                Every PWA I develop prioritizes performance and user experience, ensuring that your audience stays engaged. Depending on project requirements and content readiness, I aim to have your PWA live within 6-8 weeks, though timelines may vary based on project scope.<br><br>
-
-                Let's collaborate to bring your vision to life and create a cutting-edge PWA that captivates your audience.
-            </p>
-
-
-
-            <hr>
-        </div>
         
-        <div class="text-center">
-            <div class="btn text-light rounded-pill" style="background-color: #1C6E8C; font-weight: bold;"><a class="tittier" style="text-decoration: none;" onclick="toggleHiddenContent(this)">Read More</a></div>
-
-            
-            <br><br>
-            <div class="btn text-light rounded-pill" style="background-color: #1C6E8C; font-weight: bold;"><a class="tittier" href="#" style="text-decoration: none;">Enquire about your website</a></div>
-        </div>
-
-        </div>
-
-        <script>
-    var isContentVisible = false;
-
-    function toggleHiddenContent(button) {
-        var hiddenContent = document.querySelector('.hiddenfullstack');
-        if (!isContentVisible) {
-            hiddenContent.style.display = 'block';
-            isContentVisible = true;
-            button.innerText = 'Hide More';
-        } else {
-            hiddenContent.style.display = 'none';
-            isContentVisible = false;
-            button.innerText = 'Read More';
-        }
-
-        // Scroll back to the original position
-        window.scrollTo({
-            top: window.scrollY,
-            behavior: 'smooth'
-        });
-    }
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="container outset pb-2 mb-2" style="width: 75%; border: solid; border-color: #1C6E8C; border-radius: 25px;">
-    <div class="text-center mt-4 mb-3">
-        <svg xmlns="http://www.w3.org/2000/svg" height="100" viewBox="0 0 24 24" width="100"><path d="M0 0h24v24H0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
-    </div>
-
-    <p class="pb-4 text-dark titer">
-        <span class="titt" style="font-size: 20px;">Search Engine Optimisation: </span>
-        is not just about increasing traffic to a website; it's about enhancing the overall online visibility and accessibility of your brand. By integrating SEO into every website I develop, I provide my clients with a comprehensive strategy aimed at maximizing their digital presence and driving organic traffic.<br><br>
-    </p>
-
     
 
-    <div class="hiddenseo titer" style="display: none;">
-        <p>Here's how adding SEO to a website benefits my customers:</p>
-        <ol>
-        <li>Improved Visibility: SEO techniques ensure that your website ranks higher in search engine results pages (SERPs), making it more visible to potential customers. This increased visibility increases the chances of attracting relevant traffic to your site.</li><br>
 
-        <li>Targeted Traffic: SEO strategies are designed to attract users who are actively searching for products or services related to your business. By optimizing your website for specific keywords and phrases, we target the right audience, increasing the likelihood of conversions.</li><br>
-
-        <li>Enhanced User Experience: SEO is not just about keyword optimization; it also involves improving the overall user experience of your website. This includes factors such as site speed, mobile responsiveness, and easy navigation, all of which contribute to higher user satisfaction and engagement.</li><br>
-
-        <li>Long-Term Results: Unlike paid advertising, which stops generating traffic once the budget runs out, SEO provides sustainable, long-term results. By continuously optimizing and refining your website, we ensure that it maintains its visibility and relevance over time.</li><br>
-
-        <li>Competitive Advantage: In today's digital landscape, SEO is essential for staying ahead of the competition. By investing in SEO, you position your business as a credible and authoritative source within your industry, making it more likely to attract customers over competitors.</li><br>
-    </ol>
-    </div>
-
-
-    <div class="text-center">
-        <div class="btn text-light rounded-pill" style="background-color: #1C6E8C; font-weight: bold;">
-            <a class="tittier" style="text-decoration: none;" onclick="toggleHiddenSEOContent()">Read More</a>
-        </div>
-
-        <br><br>
-        <div class="btn text-light rounded-pill" style="background-color: #1C6E8C; font-weight: bold;">
-            <a class="tittier" href="#" style="text-decoration: none;">Enquire about your website</a>
-        </div>
-    </div>
-
-
-</div>
-
-<script>
-    var isSEOContentVisible = false;
-
-    function toggleHiddenSEOContent() {
-        var hiddenSEOContent = document.querySelector('.hiddenseo');
-        var button = document.querySelector('.btn[text-decoration="none"]');
-        
-        if (!isSEOContentVisible) {
-            hiddenSEOContent.style.display = 'block';
-            isSEOContentVisible = true;
-            button.innerText = 'Hide More';
-        } else {
-            hiddenSEOContent.style.display = 'none';
-            isSEOContentVisible = false;
-            button.innerText = 'Read More';
-        }
-    }
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="container  outset pb-2 mb-2" style="width: 75%; border: solid; border-color: #F08700; border-style: inset; border-radius: 25px;">        <div class="text-center mt-4 mb-3">
-            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="100" viewBox="0 0 24 24" width="100"><g><rect fill="none" height="24" width="24"/><path d="M14,12l-2,2l-2-2l2-2L14,12z M12,6l2.12,2.12l2.5-2.5L12,1L7.38,5.62l2.5,2.5L12,6z M6,12l2.12-2.12l-2.5-2.5L1,12 l4.62,4.62l2.5-2.5L6,12z M18,12l-2.12,2.12l2.5,2.5L23,12l-4.62-4.62l-2.5,2.5L18,12z M12,18l-2.12-2.12l-2.5,2.5L12,23l4.62-4.62 l-2.5-2.5L12,18z"/></g></svg>
-        </div>
-        <p class="pb-4 text-dark titer"><span class="titt" style="font-size: 20px;">Third Party Integrations (APIs): </span>If you require a third party piece of software attached to your website I can implement these into your websites and allow them to become seamless within your brand and give your customers the perfect experience!<br><br>
-        </p>
-        <div class="text-center">
-            <div class="btn text-light rounded-pill" style="background-color: #F08700; font-weight: bold;"><a class="tittier" href="#" style="text-decoration: none;">Enquire about your website</a></div>
-            </div>
-        </div>
-
-
-<div class="container  outset pb-2 mb-2" style="width: 75%; border: solid; border-color: #F08700; border-style: inset; border-radius: 25px;">        <div class="text-center mt-4 mb-3">
-            <svg xmlns="http://www.w3.org/2000/svg" height="100" viewBox="0 0 24 24" width="100"><path d="M0 0h24v24H0z" fill="none"/><path d="M17.21 9l-4.38-6.56c-.19-.28-.51-.42-.83-.42-.32 0-.64.14-.83.43L6.79 9H2c-.55 0-1 .45-1 1 0 .09.01.18.04.27l2.54 9.27c.23.84 1 1.46 1.92 1.46h13c.92 0 1.69-.62 1.93-1.46l2.54-9.27L23 10c0-.55-.45-1-1-1h-4.79zM9 9l3-4.4L15 9H9zm3 8c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/></svg>
-        </div>
-        <p class="pb-4 text-dark titer"><span class="titt" style="font-size: 20px;">E-Commerce Website Development: </span>If you are wanting to sell products online then I am the man for you to set this up, I can build you a fully functioning store and if needed help you with the fulfilment side of a new e-commerce business as I do have experience in 3pl work enviroments doing this very job!<br><br>
-        </p>
-        <div class="text-center">
-            <div class="btn text-light rounded-pill" style="background-color: #F08700; font-weight: bold;"><a class="tittier" href="#" style="text-decoration: none;">Enquire about your website</a></div>
-            </div>
-        </div>
-
-     </div>
-   
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
